@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://mern-todo-backend-6hzd.onrender.com",
   withCredentials: true
 });
 export const getTodos = () => API.get("/todos");
