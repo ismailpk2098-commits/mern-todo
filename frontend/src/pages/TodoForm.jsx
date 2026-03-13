@@ -25,7 +25,7 @@ function TodoForm() {
   };
 
   const handleAdd = async () => {
-    if (task.trim() === "") return;
+    if (task.trim() === "") return alert("Please Enter your Task");
 
     await addTodo({
       task,
