@@ -1,4 +1,9 @@
-import API from "./axios.js";
+import axios from "axios";
+
+const API = axios.create({
+  baseURL: "https://mern-todo-backend1-zvpz.onrender.com/api",
+  withCredentials: true
+});
 
 export const getTodos = () => API.get("/todos");
 
