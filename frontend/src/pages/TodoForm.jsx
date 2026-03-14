@@ -32,7 +32,7 @@ function TodoForm() {
       startDate,
       finishDate
     });
-
+  alert("Task Added Successfully")
     setTask("");
     setStartDate(new Date().toISOString().split("T")[0]);
     setFinishDate("");
