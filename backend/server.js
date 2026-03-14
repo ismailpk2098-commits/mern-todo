@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use(express.json());
 
 app.use("/api/users", userRoutes);
-app.use("/api/todos", todoRoutes);
+app.use("/api/todo", todoRoutes);
 
 mongoose.connect(process.env.MONGO_URI)
 .then(()=>console.log("MongoDB connected"))
